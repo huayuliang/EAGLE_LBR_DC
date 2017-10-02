@@ -1,0 +1,1785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="8.3.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="3.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="15EDGRC-3.81-2P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="6.11" y2="-8" width="0.2032" layer="21"/>
+<wire x1="6.11" y1="-8" x2="6.11" y2="-5" width="0.2032" layer="21"/>
+<wire x1="6.11" y1="-5" x2="6.11" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="6.11" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="6.11" y2="-5" width="0.2032" layer="21"/>
+</package>
+<package name="15EDGRC-3.81-3P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="9.92" y2="-8" width="0.2032" layer="21"/>
+<wire x1="9.92" y1="-8" x2="9.92" y2="-5" width="0.2032" layer="21"/>
+<wire x1="9.92" y1="-5" x2="9.92" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="9.92" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="9.92" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-4P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="13.73" y2="-8" width="0.2032" layer="21"/>
+<wire x1="13.73" y1="-8" x2="13.73" y2="-5" width="0.2032" layer="21"/>
+<wire x1="13.73" y1="-5" x2="13.73" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="13.73" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="13.73" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-5P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="17.54" y2="-8" width="0.2032" layer="21"/>
+<wire x1="17.54" y1="-8" x2="17.54" y2="-5" width="0.2032" layer="21"/>
+<wire x1="17.54" y1="-5" x2="17.54" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="17.54" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="17.54" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-6P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="21.35" y2="-8" width="0.2032" layer="21"/>
+<wire x1="21.35" y1="-8" x2="21.35" y2="-5" width="0.2032" layer="21"/>
+<wire x1="21.35" y1="-5" x2="21.35" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="21.35" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="21.35" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-7P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="25.16" y2="-8" width="0.2032" layer="21"/>
+<wire x1="25.16" y1="-8" x2="25.16" y2="-5" width="0.2032" layer="21"/>
+<wire x1="25.16" y1="-5" x2="25.16" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="25.16" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="25.16" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-8P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="28.97" y2="-8" width="0.2032" layer="21"/>
+<wire x1="28.97" y1="-8" x2="28.97" y2="-5" width="0.2032" layer="21"/>
+<wire x1="28.97" y1="-5" x2="28.97" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="28.97" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="28.97" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-9P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="32.78" y2="-8" width="0.2032" layer="21"/>
+<wire x1="32.78" y1="-8" x2="32.78" y2="-5" width="0.2032" layer="21"/>
+<wire x1="32.78" y1="-5" x2="32.78" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="32.78" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="32.78" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-10P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="36.59" y2="-8" width="0.2032" layer="21"/>
+<wire x1="36.59" y1="-8" x2="36.59" y2="-5" width="0.2032" layer="21"/>
+<wire x1="36.59" y1="-5" x2="36.59" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="36.59" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="36.59" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-11P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="40.4" y2="-8" width="0.2032" layer="21"/>
+<wire x1="40.4" y1="-8" x2="40.4" y2="-5" width="0.2032" layer="21"/>
+<wire x1="40.4" y1="-5" x2="40.4" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="40.4" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="40.4" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-12P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="44.21" y2="-8" width="0.2032" layer="21"/>
+<wire x1="44.21" y1="-8" x2="44.21" y2="-5" width="0.2032" layer="21"/>
+<wire x1="44.21" y1="-5" x2="44.21" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="44.21" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="44.21" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-24P-14-00A">
+<description>2P-24P</description>
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="89.93" y2="-8" width="0.2032" layer="21"/>
+<wire x1="89.93" y1="-8" x2="89.93" y2="-5" width="0.2032" layer="21"/>
+<wire x1="89.93" y1="-5" x2="89.93" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="89.93" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="89.93" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="60.96" y="0" drill="1.4"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="64.77" y="0" drill="1.4"/>
+<wire x1="64.77" y1="0" x2="64.77" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="68.58" y="0" drill="1.4"/>
+<pad name="20" x="72.39" y="0" drill="1.4"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="72.39" y1="0" x2="72.39" y2="-6.1" width="0.8" layer="51"/>
+<pad name="21" x="76.2" y="0" drill="1.4"/>
+<wire x1="76.2" y1="0" x2="76.2" y2="-6.1" width="0.8" layer="51"/>
+<pad name="22" x="80.01" y="0" drill="1.4"/>
+<wire x1="80.01" y1="0" x2="80.01" y2="-6.1" width="0.8" layer="51"/>
+<pad name="23" x="83.82" y="0" drill="1.4"/>
+<wire x1="83.82" y1="0" x2="83.82" y2="-6.1" width="0.8" layer="51"/>
+<pad name="24" x="87.63" y="0" drill="1.4"/>
+<wire x1="87.63" y1="0" x2="87.63" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-20P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="74.69" y2="-8" width="0.2032" layer="21"/>
+<wire x1="74.69" y1="-8" x2="74.69" y2="-5" width="0.2032" layer="21"/>
+<wire x1="74.69" y1="-5" x2="74.69" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="74.69" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="74.69" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<pad name="17" x="60.96" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="64.77" y="0" drill="1.4"/>
+<wire x1="64.77" y1="0" x2="64.77" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="68.58" y="0" drill="1.4"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="-6.1" width="0.8" layer="51"/>
+<pad name="20" x="72.39" y="0" drill="1.4"/>
+<wire x1="72.39" y1="0" x2="72.39" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-22P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="82.31" y2="-8" width="0.2032" layer="21"/>
+<wire x1="82.31" y1="-8" x2="82.31" y2="-5" width="0.2032" layer="21"/>
+<wire x1="82.31" y1="-5" x2="82.31" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="82.31" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="82.31" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="60.96" y="0" drill="1.4"/>
+<pad name="18" x="64.77" y="0" drill="1.4"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="64.77" y1="0" x2="64.77" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="68.58" y="0" drill="1.4"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="-6.1" width="0.8" layer="51"/>
+<pad name="20" x="72.39" y="0" drill="1.4"/>
+<wire x1="72.39" y1="0" x2="72.39" y2="-6.1" width="0.8" layer="51"/>
+<pad name="21" x="76.2" y="0" drill="1.4"/>
+<wire x1="76.2" y1="0" x2="76.2" y2="-6.1" width="0.8" layer="51"/>
+<pad name="22" x="80.01" y="0" drill="1.4"/>
+<wire x1="80.01" y1="0" x2="80.01" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-18P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="67.07" y2="-8" width="0.2032" layer="21"/>
+<wire x1="67.07" y1="-8" x2="67.07" y2="-5" width="0.2032" layer="21"/>
+<wire x1="67.07" y1="-5" x2="67.07" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="67.07" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="67.07" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="60.96" y="0" drill="1.4"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="64.77" y="0" drill="1.4"/>
+<wire x1="64.77" y1="0" x2="64.77" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-16P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="59.45" y2="-8" width="0.2032" layer="21"/>
+<wire x1="59.45" y1="-8" x2="59.45" y2="-5" width="0.2032" layer="21"/>
+<wire x1="59.45" y1="-5" x2="59.45" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="59.45" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="59.45" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-14P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="51.83" y2="-8" width="0.2032" layer="21"/>
+<wire x1="51.83" y1="-8" x2="51.83" y2="-5" width="0.2032" layer="21"/>
+<wire x1="51.83" y1="-5" x2="51.83" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="51.83" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="51.83" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-23P-14-00A">
+<description>2P-24P</description>
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="86.12" y2="-8" width="0.2032" layer="21"/>
+<wire x1="86.12" y1="-8" x2="86.12" y2="-5" width="0.2032" layer="21"/>
+<wire x1="86.12" y1="-5" x2="86.12" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="86.12" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="86.12" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="60.96" y="0" drill="1.4"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="64.77" y="0" drill="1.4"/>
+<wire x1="64.77" y1="0" x2="64.77" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="68.58" y="0" drill="1.4"/>
+<pad name="20" x="72.39" y="0" drill="1.4"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="72.39" y1="0" x2="72.39" y2="-6.1" width="0.8" layer="51"/>
+<pad name="21" x="76.2" y="0" drill="1.4"/>
+<wire x1="76.2" y1="0" x2="76.2" y2="-6.1" width="0.8" layer="51"/>
+<pad name="22" x="80.01" y="0" drill="1.4"/>
+<wire x1="80.01" y1="0" x2="80.01" y2="-6.1" width="0.8" layer="51"/>
+<pad name="23" x="83.82" y="0" drill="1.4"/>
+<wire x1="83.82" y1="0" x2="83.82" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-21P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="78.5" y2="-8" width="0.2032" layer="21"/>
+<wire x1="78.5" y1="-8" x2="78.5" y2="-5" width="0.2032" layer="21"/>
+<wire x1="78.5" y1="-5" x2="78.5" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="78.5" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="78.5" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="60.96" y="0" drill="1.4"/>
+<pad name="18" x="64.77" y="0" drill="1.4"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="64.77" y1="0" x2="64.77" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="68.58" y="0" drill="1.4"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="-6.1" width="0.8" layer="51"/>
+<pad name="20" x="72.39" y="0" drill="1.4"/>
+<wire x1="72.39" y1="0" x2="72.39" y2="-6.1" width="0.8" layer="51"/>
+<pad name="21" x="76.2" y="0" drill="1.4"/>
+<wire x1="76.2" y1="0" x2="76.2" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-19P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="70.88" y2="-8" width="0.2032" layer="21"/>
+<wire x1="70.88" y1="-8" x2="70.88" y2="-5" width="0.2032" layer="21"/>
+<wire x1="70.88" y1="-5" x2="70.88" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="70.88" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="70.88" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<pad name="17" x="60.96" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="64.77" y="0" drill="1.4"/>
+<wire x1="64.77" y1="0" x2="64.77" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="68.58" y="0" drill="1.4"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-17P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="63.26" y2="-8" width="0.2032" layer="21"/>
+<wire x1="63.26" y1="-8" x2="63.26" y2="-5" width="0.2032" layer="21"/>
+<wire x1="63.26" y1="-5" x2="63.26" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="63.26" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="63.26" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="57.15" y="0" drill="1.4"/>
+<wire x1="57.15" y1="0" x2="57.15" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="60.96" y="0" drill="1.4"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-15P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="55.64" y2="-8" width="0.2032" layer="21"/>
+<wire x1="55.64" y1="-8" x2="55.64" y2="-5" width="0.2032" layer="21"/>
+<wire x1="55.64" y1="-5" x2="55.64" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="55.64" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="55.64" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="49.53" y="0" drill="1.4"/>
+<wire x1="49.53" y1="0" x2="49.53" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="53.34" y="0" drill="1.4"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.81-13P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.81" y="0" drill="1.4"/>
+<wire x1="-2.3" y1="-8" x2="48.02" y2="-8" width="0.2032" layer="21"/>
+<wire x1="48.02" y1="-8" x2="48.02" y2="-5" width="0.2032" layer="21"/>
+<wire x1="48.02" y1="-5" x2="48.02" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="48.02" y1="1.2" x2="-2.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="1.2" x2="-2.3" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.3" y1="-5" x2="-2.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.3" y1="-5" x2="48.02" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7.62" y="0" drill="1.4"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="11.43" y="0" drill="1.4"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="15.24" y="0" drill="1.4"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="19.05" y="0" drill="1.4"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="22.86" y="0" drill="1.4"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="26.67" y="0" drill="1.4"/>
+<pad name="9" x="30.48" y="0" drill="1.4"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="34.29" y="0" drill="1.4"/>
+<wire x1="34.29" y1="0" x2="34.29" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="38.1" y="0" drill="1.4"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="41.91" y="0" drill="1.4"/>
+<wire x1="41.91" y1="0" x2="41.91" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="45.72" y="0" drill="1.4"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-2P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="5.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="5.65" y1="-8" x2="5.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="5.65" y1="-5" x2="5.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="5.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="5.65" y2="-5" width="0.2032" layer="21"/>
+</package>
+<package name="15EDGRC-3.5-4P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="12.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="12.65" y1="-8" x2="12.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="12.65" y1="-5" x2="12.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="12.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="12.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-8P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="26.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="26.65" y1="-8" x2="26.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="26.65" y1="-5" x2="26.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="26.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="26.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-16P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="54.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="54.65" y1="-8" x2="54.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="54.65" y1="-5" x2="54.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="54.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="54.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-3P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="9.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="9.15" y1="-8" x2="9.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="9.15" y1="-5" x2="9.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="9.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="9.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-6P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="19.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="19.65" y1="-8" x2="19.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="19.65" y1="-5" x2="19.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="19.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="19.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-12P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="40.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="40.65" y1="-8" x2="40.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="40.65" y1="-5" x2="40.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="40.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="40.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-24P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="82.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="82.65" y1="-8" x2="82.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="82.65" y1="-5" x2="82.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="82.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="82.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<pad name="17" x="56" y="0" drill="1.4"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="56" y1="0" x2="56" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="59.5" y="0" drill="1.4"/>
+<wire x1="59.5" y1="0" x2="59.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="63" y="0" drill="1.4"/>
+<pad name="20" x="66.5" y="0" drill="1.4"/>
+<wire x1="63" y1="0" x2="63" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="66.5" y1="0" x2="66.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="21" x="70" y="0" drill="1.4"/>
+<wire x1="70" y1="0" x2="70" y2="-6.1" width="0.8" layer="51"/>
+<pad name="22" x="73.5" y="0" drill="1.4"/>
+<pad name="23" x="77" y="0" drill="1.4"/>
+<wire x1="73.5" y1="0" x2="73.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="77" y1="0" x2="77" y2="-6.1" width="0.8" layer="51"/>
+<pad name="24" x="80.5" y="0" drill="1.4"/>
+<wire x1="80.5" y1="0" x2="80.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-5P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="16.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="16.15" y1="-8" x2="16.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="16.15" y1="-5" x2="16.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="16.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="16.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-10P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="33.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="33.65" y1="-8" x2="33.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="33.65" y1="-5" x2="33.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="33.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="33.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-20P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="68.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="68.65" y1="-8" x2="68.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="68.65" y1="-5" x2="68.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="68.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="68.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<pad name="17" x="56" y="0" drill="1.4"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="56" y1="0" x2="56" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="59.5" y="0" drill="1.4"/>
+<wire x1="59.5" y1="0" x2="59.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="63" y="0" drill="1.4"/>
+<pad name="20" x="66.5" y="0" drill="1.4"/>
+<wire x1="63" y1="0" x2="63" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="66.5" y1="0" x2="66.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-7P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="23.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="23.15" y1="-8" x2="23.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="23.15" y1="-5" x2="23.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="23.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="23.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-14P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="47.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="47.65" y1="-8" x2="47.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="47.65" y1="-5" x2="47.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="47.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="47.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-11P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="37.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="37.15" y1="-8" x2="37.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="37.15" y1="-5" x2="37.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="37.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="37.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-9P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="30.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="30.15" y1="-8" x2="30.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="30.15" y1="-5" x2="30.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="30.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="30.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-18P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="61.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="61.65" y1="-8" x2="61.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="61.65" y1="-5" x2="61.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="61.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="61.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="56" y="0" drill="1.4"/>
+<wire x1="56" y1="0" x2="56" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="59.5" y="0" drill="1.4"/>
+<wire x1="59.5" y1="0" x2="59.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-22P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="75.65" y2="-8" width="0.2032" layer="21"/>
+<wire x1="75.65" y1="-8" x2="75.65" y2="-5" width="0.2032" layer="21"/>
+<wire x1="75.65" y1="-5" x2="75.65" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="75.65" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="75.65" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="56" y="0" drill="1.4"/>
+<wire x1="56" y1="0" x2="56" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="59.5" y="0" drill="1.4"/>
+<pad name="19" x="63" y="0" drill="1.4"/>
+<wire x1="59.5" y1="0" x2="59.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="63" y1="0" x2="63" y2="-6.1" width="0.8" layer="51"/>
+<pad name="20" x="66.5" y="0" drill="1.4"/>
+<wire x1="66.5" y1="0" x2="66.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="21" x="70" y="0" drill="1.4"/>
+<pad name="22" x="73.5" y="0" drill="1.4"/>
+<wire x1="70" y1="0" x2="70" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="73.5" y1="0" x2="73.5" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-23P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="79.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="79.15" y1="-8" x2="79.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="79.15" y1="-5" x2="79.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="79.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="79.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<pad name="17" x="56" y="0" drill="1.4"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="56" y1="0" x2="56" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="59.5" y="0" drill="1.4"/>
+<wire x1="59.5" y1="0" x2="59.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="63" y="0" drill="1.4"/>
+<pad name="20" x="66.5" y="0" drill="1.4"/>
+<wire x1="63" y1="0" x2="63" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="66.5" y1="0" x2="66.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="21" x="70" y="0" drill="1.4"/>
+<wire x1="70" y1="0" x2="70" y2="-6.1" width="0.8" layer="51"/>
+<pad name="22" x="73.5" y="0" drill="1.4"/>
+<pad name="23" x="77" y="0" drill="1.4"/>
+<wire x1="73.5" y1="0" x2="73.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="77" y1="0" x2="77" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-21P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="72.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="72.15" y1="-8" x2="72.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="72.15" y1="-5" x2="72.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="72.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="72.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="56" y="0" drill="1.4"/>
+<wire x1="56" y1="0" x2="56" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="59.5" y="0" drill="1.4"/>
+<pad name="19" x="63" y="0" drill="1.4"/>
+<wire x1="59.5" y1="0" x2="59.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="63" y1="0" x2="63" y2="-6.1" width="0.8" layer="51"/>
+<pad name="20" x="66.5" y="0" drill="1.4"/>
+<wire x1="66.5" y1="0" x2="66.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="21" x="70" y="0" drill="1.4"/>
+<wire x1="70" y1="0" x2="70" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-19P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="65.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="65.15" y1="-8" x2="65.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="65.15" y1="-5" x2="65.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="65.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="65.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<pad name="17" x="56" y="0" drill="1.4"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="56" y1="0" x2="56" y2="-6.1" width="0.8" layer="51"/>
+<pad name="18" x="59.5" y="0" drill="1.4"/>
+<wire x1="59.5" y1="0" x2="59.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="19" x="63" y="0" drill="1.4"/>
+<wire x1="63" y1="0" x2="63" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-17P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="58.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="58.15" y1="-8" x2="58.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="58.15" y1="-5" x2="58.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="58.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="58.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<pad name="16" x="52.5" y="0" drill="1.4"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="52.5" y1="0" x2="52.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="17" x="56" y="0" drill="1.4"/>
+<wire x1="56" y1="0" x2="56" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-15P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="51.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="51.15" y1="-8" x2="51.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="51.15" y1="-5" x2="51.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="51.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="51.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<pad name="14" x="45.5" y="0" drill="1.4"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="45.5" y1="0" x2="45.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="15" x="49" y="0" drill="1.4"/>
+<wire x1="49" y1="0" x2="49" y2="-6.1" width="0.8" layer="51"/>
+</package>
+<package name="15EDGRC-3.5-13P-14-00A">
+<pad name="1" x="0" y="0" drill="1.4"/>
+<pad name="2" x="3.5" y="0" drill="1.4"/>
+<wire x1="-2.15" y1="-8" x2="44.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="44.15" y1="-8" x2="44.15" y2="-5" width="0.2032" layer="21"/>
+<wire x1="44.15" y1="-5" x2="44.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="44.15" y1="1.2" x2="-2.15" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.2" x2="-2.15" y2="-5" width="0.2032" layer="21"/>
+<text x="-2.286" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-2.15" y1="-5" x2="-2.15" y2="-8" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="3.5" y1="0" x2="3.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="-2.15" y1="-5" x2="44.15" y2="-5" width="0.2032" layer="21"/>
+<pad name="3" x="7" y="0" drill="1.4"/>
+<pad name="4" x="10.5" y="0" drill="1.4"/>
+<wire x1="7" y1="0" x2="7" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="10.5" y1="0" x2="10.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="5" x="14" y="0" drill="1.4"/>
+<pad name="6" x="17.5" y="0" drill="1.4"/>
+<wire x1="14" y1="0" x2="14" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="17.5" y1="0" x2="17.5" y2="-6.1" width="0.8" layer="51"/>
+<pad name="7" x="21" y="0" drill="1.4"/>
+<wire x1="21" y1="0" x2="21" y2="-6.1" width="0.8" layer="51"/>
+<pad name="8" x="24.5" y="0" drill="1.4"/>
+<pad name="9" x="28" y="0" drill="1.4"/>
+<wire x1="24.5" y1="0" x2="24.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="28" y1="0" x2="28" y2="-6.1" width="0.8" layer="51"/>
+<pad name="10" x="31.5" y="0" drill="1.4"/>
+<pad name="11" x="35" y="0" drill="1.4"/>
+<wire x1="31.5" y1="0" x2="31.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="35" y1="0" x2="35" y2="-6.1" width="0.8" layer="51"/>
+<pad name="12" x="38.5" y="0" drill="1.4"/>
+<pad name="13" x="42" y="0" drill="1.4"/>
+<wire x1="38.5" y1="0" x2="38.5" y2="-6.1" width="0.8" layer="51"/>
+<wire x1="42" y1="0" x2="42" y2="-6.1" width="0.8" layer="51"/>
+</package>
+</packages>
+<symbols>
+</symbols>
+<devicesets>
+</devicesets>
+</library>
+</drawing>
+</eagle>
